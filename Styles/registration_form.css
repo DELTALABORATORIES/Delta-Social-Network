@@ -1,0 +1,151 @@
+﻿/*Animations*/
+@keyframes basicAnimation{
+    from {
+       background-color: rgba(42, 34, 34, 0.51);
+    }
+    to {
+       background-color: rgba(42, 34, 34, 0.91);
+    }
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+.Main {
+    text-align: center;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    background: url(../Images/Registration_Form/pexels-photo-248700.jpeg) no-repeat center;
+    background-size: cover;
+}
+.SignUp {
+    position: absolute;
+    left: 29.5%;
+    margin: 120px 0 15% 0;
+    min-height: 65%;
+    min-width: 41%;
+    width: 41%;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#SignUpLogo {
+    max-width: 23%;
+    min-width: 22%;
+    width: 23%;
+    margin-top: -28px;
+}
+
+#hrShort {
+    margin-top: -20px;
+    width: 56%;
+}
+
+#hrLong {
+    width: 68%;
+    margin-bottom: 35px;
+}
+#hrMiddle{
+    width:62%;
+}
+.CreateAccount{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    color:white;
+}
+
+.FormContainer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top:28px;
+}
+
+#InputUsername {
+    display: inline-block;
+    width: 63%;
+    height: 40px;
+    background-color: rgba(42, 34, 34, 0.51);
+    border-style: none;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+    #InputUsername:hover {
+        display: inline-block;
+        width: 63%;
+        height: 40px;
+        background-color: rgba(42, 34, 34, 0.91);
+        border-style: none;
+        border-radius: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: white;
+        animation-name: basicAnimation;
+        animation-duration: 0.5s;
+    }
+
+.SignUpInput{
+    display: inline-block;
+    width: 63%;
+    height: 40px;
+    background-color: rgba(42, 34, 34, 0.51);
+    border-style: none;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+    .SignUpInput:hover {
+        display: inline-block;
+        width: 63%;
+        height: 40px;
+        background-color: rgba(42, 34, 34, 0.91);
+        border-style: none;
+        border-radius: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: white;
+        animation-name: basicAnimation;
+        animation-duration: 0.5s;
+    }
+
+#SignUp {
+    margin-top: 20px;
+    display: inline-block;
+    width: 40%;
+    height: 40px;
+    background-color: rgba(42, 34, 34, 0.51);
+    border-style: none;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+    #SignUp:hover {
+        margin-top: 20px;
+        display: inline-block;
+        width: 40%;
+        height: 40px;
+        background-color: rgba(42, 34, 34, 0.91);
+        border-style: none;
+        border-radius: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: white;
+        animation-name: basicAnimation;
+        animation-duration:0.8s;
+    }
+
+.Register {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}

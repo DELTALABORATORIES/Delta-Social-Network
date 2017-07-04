@@ -1,0 +1,182 @@
+﻿/*Font-Families*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+@keyframes basicAnimation {
+    from {
+        background-color: rgba(42, 34, 34, 0.51);
+    }
+
+    to {
+        background-color: rgba(42, 34, 34, 1);
+    }
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+.Main {
+    text-align:center;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    background: url(../Images/Login_Page/background-image-2.jpeg) no-repeat center bottom;
+    background-size: cover;
+}
+.AboutUs {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.SignInForm {
+    position: absolute;
+    left:50%;
+    width: 50%;
+    min-height: 100%;
+    margin:0;
+}
+.WelcomeText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: white;
+    text-align:left;
+    vertical-align: middle;
+    margin:200px 0 0 150px;
+    cursor:pointer;
+}
+.Description {
+    text-align: left;
+    max-width: 500px;
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 60px 0 0 150px;
+    cursor:pointer;
+}
+.SignIn {
+    position: absolute;
+    left: 25%;
+    margin: 120px 0 15% 0;
+    min-height: 65%;
+    min-width: 50%;
+    width:50%;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.4);
+}
+#SignInLogo{
+    width:50%;
+    min-width:48%;
+    max-width:50%;
+    margin-top:-28px;
+}
+#hrLong{
+    margin-top:-20px;
+    width:75%;
+}
+#hrShort{
+    width:68%;
+    margin-bottom:60px;
+}
+.FormContainer{
+    width:100%;
+    text-align:center;
+    margin-bottom:30px;
+}
+#InputUsername {
+    display: inline-block;
+    width: 82%;
+    height: 40px;
+    background-color: rgba(42, 34, 34, 0.51);
+    border-style: none;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+    #InputUsername:hover {
+        display: inline-block;
+        width: 82%;
+        height: 40px;
+        background-color: rgba(42, 34, 34, 1);
+        border-style: none;
+        border-radius: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: white;
+        animation-name:basicAnimation;
+        animation-duration:0.3s;
+    }
+#InputPassword {
+    display: inline-block;
+    width: 82%;
+    height: 40px;
+    background-color: rgba(42, 34, 34, 0.51);
+    border-style: none;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+#InputPassword:hover {
+    display: inline-block;
+    width: 82%;
+    height: 40px;
+    background-color: rgba(42, 34, 34, 1);
+    border-style: none;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    animation-name: basicAnimation;
+    animation-duration: 0.3s;
+}
+#SignIn {
+    margin-top: 20px;
+    display: inline-block;
+    width: 40%;
+    height: 40px;
+    background-color: rgba(42, 34, 34, 0.51);
+    border-style: none;
+    border-radius: 7px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    color:white;
+    cursor:pointer;
+}
+#SignIn:hover {
+    margin-top: 20px;
+    display: inline-block;
+    width: 40%;
+    height: 40px;
+    background-color: rgba(42, 34, 34, 1);
+    border-style: none;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    animation-name: basicAnimation;
+    animation-duration: 0.3s;
+    cursor:pointer;
+}
+
+.Register{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:white;
+
+}
