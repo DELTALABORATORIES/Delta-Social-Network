@@ -1,5 +1,5 @@
 ﻿::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
     background: transparent; 
 }
 ::-webkit-scrollbar-thumb {
@@ -27,7 +27,6 @@ html, body {
     width: 100%;
     position: absolute;
     height: 170px;
-    background-color: red;
     background: url(../Images/Profile_Page/background-Image.jpg) no-repeat center center;
     background-size: cover;
     border:2px solid white;
@@ -134,4 +133,14 @@ html, body {
     margin-right:2%;
     width:30%;
     float:left;
+}
+.uploadPhoto{
+    position: absolute;
+    top:200px;
+    right:8%;
+}
+#uploadPicture{
+    width:250px;
+    background-color:rgba(42, 34, 34, 0.91);
+    border-style: none;
 }

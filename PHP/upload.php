@@ -8,7 +8,7 @@
    //Uploaded Picture Validator and Handler
 
    if(isset($_FILES['uploadPicture'])){
-       $errors= array();
+       $errors = array();
        $fileName = $_FILES['uploadPicture']['name'];
        $fileSize = $_FILES['uploadPicture']['size'];
        $fileTmp = $_FILES['uploadPicture']['tmp_name'];
@@ -27,7 +27,7 @@
 
        if(empty($errors)==true) {
            $pictureDate = time();
-           move_uploaded_file($fileTmp,"../Images/@Username/".'username'.$pictureDate);
+           move_uploaded_file($fileTmp,"../Images/@Username/".'username'.$pictureDate.'jpg');
            echo "OK";
        }
    }

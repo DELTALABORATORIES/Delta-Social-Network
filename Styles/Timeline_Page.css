@@ -1,5 +1,5 @@
 ﻿::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
     background: transparent;
 }
 
@@ -53,7 +53,7 @@ html, body {
     margin-top:20px;
 }
 .ProfileName {
-    margin-top: 180px;
+    margin-top: 12px;
     margin-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -95,13 +95,15 @@ html, body {
     cursor: pointer;
 }
 
-#PostProfileName {
+.PostProfileName {
     margin: 10px 0 0 0;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
-#PostDate {
+.PostDate {
+    color:white;
     width: 80%;
     margin: 8px 0 0 0;
     font-size: 12px;

@@ -6,7 +6,7 @@
     <title>Timline | DELTA</title>
     <link href="Styles/Profile_page.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Passion+One" rel="stylesheet">
-    <link rel="icon" href="Images/Logos/DELTA_Network-normal(1).ico" type="image/x-icon">
+    <link rel="icon" href="Images/Logos/DELTA_Network-normal.ico" type="image/x-icon">
 </head>
 <body>
     <div class="Main">
@@ -21,6 +21,12 @@
                     @hzohrabyan
                 </p>
             </div>
+        </div>
+        <div class="uploadPhoto">
+            <form action="PHP/upload.php" method="POST" enctype="multipart/form-data">
+                <input id="uploadPicture" name="uploadPicture" type="file">
+                <input type="submit">
+            </form>
         </div>
         <div class="YourPosts">
             <div class="Post">

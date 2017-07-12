@@ -6,7 +6,7 @@
     <title>Sign IN | DELTA</title>
     <link href="Styles/Login_Page.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Anton|Fresca|Indie+Flower|Montserrat|Poppins" rel="stylesheet">
-    <link rel="icon" href="Images/Logos/DELTA_Network-normal(1).ico" type="image/x-icon">
+    <link rel="icon" href="Images/Logos/DELTA_Network-normal.ico" type="image/x-icon">
 </head>
 <body>
    <div class="Main">
@@ -24,13 +24,13 @@
                <hr id="hrLong"/>
                <hr id="hrShort"/>
                <div class="FormContainer">
-                   <form>
-                       <input id="InputUsername" type="text" placeholder="      Username" />
-                       <div style="margin-top:20px;">
-                           <input id="InputPassword" type="password" placeholder="      Password" />
-                       </div>
-                       <a href="timeline_page.html"><input id="SignIn" type="button" value="Sign In" /></a>    
-                       </form>
+                   <form action="PHP/index.php" method="post">
+                       <input id="InputUsername" type="email" placeholder="      Username" name="logInUSERNAME"/>
+                            <div style="margin-top:20px;">
+                                <input id="InputPassword" type="password" placeholder="      Password" name="logInPASSWORD"/>
+                            </div>
+                       <a href="timeline_page.html"><input id="SignIn" type="submit" value="Sign In"  /></a>
+                   </form>
                </div>
                <p class="Register">
                    DO NOT HAVE AN ACCOUNT   <a href="registration_form.html" style="margin-left:5px;">SIGN UP</a>
