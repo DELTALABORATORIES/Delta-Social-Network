@@ -24,12 +24,12 @@
                <hr id="hrLong"/>
                <hr id="hrShort"/>
                <div class="FormContainer">
-                   <form action="PHP/index.php" method="post">
-                       <input id="InputUsername" type="email" placeholder="      Username" name="logInUSERNAME"/>
+                   <form action="PHP/SignIn.php" method="post">
+                       <input id="InputUsername" type="email" placeholder="      E-Mail" name="logInEMAIL"/>
                             <div style="margin-top:20px;">
                                 <input id="InputPassword" type="password" placeholder="      Password" name="logInPASSWORD"/>
                             </div>
-                       <a href="timeline_page.html"><input id="SignIn" type="submit" value="Sign In"  /></a>
+                      <input id="SignIn" type="submit" value="Sign In"  />
                    </form>
                </div>
                <p class="Register">
@@ -38,6 +38,5 @@
            </div>
        </div>
    </div>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
