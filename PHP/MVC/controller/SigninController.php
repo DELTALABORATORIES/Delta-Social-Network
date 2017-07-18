@@ -2,13 +2,16 @@
 /**
  * Created by PhpStorm.
  * User: death
- * Date: 7/17/2017
- * Time: 12:33 PM
+ * Date: 7/18/2017
+ * Time: 6:02 PM
  */
-class LogIn
+namespace Controller;
+
+class SigninController
 {   //TODO Make paths as new methods for objects
     //TODO Make new static paths
-    public function signIn()
+    const accountDatabaseLocation = '../../../Database/userInfo.txt';
+    public function Validation()
     {
         if (preg_match("/^[ ]*$/",$_POST['logInEMAIL']) || preg_match("/^[ ]*$/",$_POST['logInPASSWORD'])) {
             echo 'Something Went Wrong';
@@ -20,7 +23,7 @@ class LogIn
         else{
             $EMail = $_POST['logInEMAIL'];
             echo $_POST['logInEMAIL'];
-            $accountDatabase = '../Database/userInfo.txt';
+            $accountDatabase = self::accountDatabaseLocation ;
             $accountData = fopen($accountDatabase, 'r');
 
             while (!feof($accountData)) {
@@ -41,7 +44,7 @@ class LogIn
                     var_dump(password_verify($passwordHashed, $passwordStored));
 
                     if (password_verify($password, $passwordStored) == true) {
-                        header("Location:../timeline_page.html");
+                        header("Location:../../../timeline_page.html");
                     } else {
                         echo 'Wrong Email or Password';
                     }
@@ -50,8 +53,4 @@ class LogIn
             fclose($accountData);
         }
     }
-}
-class LogUp
-{
-
 }

@@ -29,6 +29,6 @@ if (isset($_FILES['uploadPicture'])) {
         move_uploaded_file($fileTmp, "../Images/@Username/" . $fileUsableName);
         chmod('../Images/@Username/' . $fileUsableName, 0755);
         echo "OK";
-        echo '<img src="../Images/@Username/"' . $fileUsableName . '>';
+        echo '<img src="../Images/@Username/' . $fileUsableName .'"' . 'style="width:100%"' .'/>';
     }
 }

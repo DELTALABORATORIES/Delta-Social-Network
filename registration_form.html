@@ -19,7 +19,7 @@
                     LET'S CREATE YOUR ACCOUNT
                 </p>
                 <div class="FormContainer">
-                    <form action="PHP/SignUp.php" method="post">
+                    <form action="PHP/MVC/public/index.php" method="post">
                         <input id="InputUsername" type="text" placeholder="      First Name" name="logUpName"/>
                         <div style="margin-top:20px;">
                             <input class="SignUpInput" type="text" placeholder="      Last Name" name="logUpLastName"/>
@@ -31,6 +31,8 @@
                             <input class="SignUpInput" type="password" placeholder="      Password" name="logUpPassword"/>
                         </div>
                         <input id="SignUp" type="submit" value="Sign Up" formmethod="post" />
+                        <input name="pageName" value="CreateAccount" style="visibility: collapse; width: 1px;height:1px;"/>
+                        <input name="controller" value="Signup" style="visibility: collapse;width: 1px;height:1px;"/>
                     </form>
                 </div>
                 <p class="Register">
