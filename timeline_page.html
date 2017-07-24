@@ -12,8 +12,12 @@
     <div class="Main">
        <div class="ToolBar">
          <img src="Images/Logos/DELTA Network-normal.png" class="ToolBarLogo" alt="" />
-         <input id="SearchInput" type="text" placeholder="          Hovhannes Zohrabyan"/>
-           <i class="fa fa-search fa-2x SearchButton" aria-hidden="true"></i>
+           <form action="PHP/MVC/controller/SearchController.php" method="post">
+               <input id="SearchInput" type="text" name="FriendSearch" placeholder="          Hovhannes Zohrabyan"/>
+               <input name="pageName" value="Search" style="visibility: collapse; width: 1px;height:1px;"/>
+               <input name="controller" value="Search" style="visibility: collapse;width: 1px;height:1px;"/>
+               <button type="submit"><i class="fa fa-search fa-2x SearchButton" aria-hidden="true" ></i></button>
+           </form>
            <div class="Profile">
                <p style="margin:0 -50px 0 0;" class="ProfileName">
                    Hovhannes Zohrabyan
@@ -119,6 +123,5 @@
             </div>
         </div>
     <script src="https://use.fontawesome.com/977e6baa13.js"></script>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

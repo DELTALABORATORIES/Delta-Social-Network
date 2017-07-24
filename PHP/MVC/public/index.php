@@ -5,7 +5,6 @@
  * Date: 7/11/2017
  * Time: 2:40 PM
  */
-//TODO Make MVC Controller
 spl_autoload_register(function ($className) {
 
     $classPath = str_replace('\\', '/', $className);
@@ -14,7 +13,6 @@ spl_autoload_register(function ($className) {
 
     require $classPath;
 });
-
 $pageName = $_POST['pageName'];
 $action = $_POST['controller'];
 
@@ -27,5 +25,17 @@ $action = strtolower($action);
 $action = ucfirst($action);
 
 $controller = new $pageName();
+
+$servername = "localhost";
+$username = "root";
+$password = "DELTA";
+$dbname = "network_database";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 $controller->$action();

@@ -3,3 +3,6 @@ root | root | root@gmail.com | $2y$12$NXtiaGBRAijVc1QuZtCeNOvIGOeuzSUhKq7HmXlxk7
 Zorro | Zohrabyan | Zorro@gmail.com | $2y$12$sL6J0VSDKHv2Cn9NlweW5eiL1g9H/WjG4xK2Napuv3CP4s0WArpYy
 Hovhannes | Zohrabyan | Del@gmail.com | $2y$12$8BxGNNPo21B.H2dgfD6jWOLOuVKfySSH.ZIQkOAVa0kfwz6lte2Yq
 Someone | Someone | Someone@gmail.com | $2y$12$s9RnUjBkV22qwVM7ebXXy.cbZVMX6Tr1NNkBXZAsjctDKEiEegXsC
+Hoqwed | awdWD | rootAWDAWD@mail.com | $2y$12$mLO1cbZbzRyFjFRxR6zfpOmlftnWvMuV57u2KXe.o0WFpCJfxpwyi
+awdwd | awdawdawd | root@mail.com | $2y$12$cAuEnl9chAxaYoIMEA.Q1OOwQLZeu3aGoHmj0VEXqXBWxYZbh3wTy
+awdWAD | awdWAD | root@gmail.com | $2y$12$gBQrfsVa4mH7CbO.pi/X3.u0bnGEBBzKRieCt05R9ZVHiJ15T/fzi
