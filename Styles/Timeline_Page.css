@@ -42,6 +42,8 @@ html, body {
     font-size:18px;
 }
 .SearchButton {
+    background-color:transparent;
+    text-align: center;
     color: white;
     float: left;
     margin-top: 11px;
@@ -50,7 +52,7 @@ html, body {
 .Profile {
     float:right;
     width:300px;
-    margin-top:20px;
+    margin-top:-24px;
 }
 .ProfileName {
     margin-top: 12px;
@@ -156,4 +158,10 @@ html, body {
 }
 .SideBarText{
     font-size:18px;
+}
+.FriendSearch{
+    background-color: transparent;
+    border:none;
+    position:relative;
+    left:-500px;
 }

@@ -18,7 +18,6 @@ if (isset($_FILES['uploadPicture'])) {
     $extensions = ["jpeg", "jpg", "png"];
     $extension = pathinfo($fileName, PATHINFO_EXTENSION);
 
-
     if ($fileSize > 20971520) {
         $errors[] = 'File size should not be more than 20 MB';
     }
@@ -27,7 +26,7 @@ if (isset($_FILES['uploadPicture'])) {
         $pictureDate = time();
         $fileUsableName = 'username' . $pictureDate . '.' . $extension;
         move_uploaded_file($fileTmp, "../Images/@Username/" . $fileUsableName);
-        chmod('../Images/@Username/' . $fileUsableName, 0755);
+        chmod('../Images/@Username/' . $fileUsableName, 0777);
         echo "OK";
         echo '<img src="../Images/@Username/' . $fileUsableName .'"' . 'style="width:100%"' .'/>';
     }

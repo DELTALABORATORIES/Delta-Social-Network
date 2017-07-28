@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Timline | DELTA</title>
+    <title>Profile | DELTA</title>
     <link href="Styles/Profile_page.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Passion+One" rel="stylesheet">
     <link rel="icon" href="Images/Logos/DELTA_Network-normal.ico" type="image/x-icon">
@@ -23,10 +23,6 @@
             </div>
         </div>
         <div class="uploadPhoto">
-            <form action="PHP/upload.php" method="POST" enctype="multipart/form-data">
-                <input id="uploadPicture" name="uploadPicture" type="file">
-                <input type="submit">
-            </form>
         </div>
         <div class="YourPosts">
             <div class="Post">
@@ -119,6 +115,48 @@
                     <img src="Images/Profile_Page/Image-2.jpeg" class="PreviewImages" alt="" />
                     <img src="Images/Profile_Page/Image-5.jpeg" class="PreviewImages" alt="" />
                     
+                </div>
+            </div>
+        </div>
+        <div class="PersonalInfoRight">
+            <p class="Username">
+                Control Center
+            </p>
+            <p class="SideBarText">
+                <i class="fa fa-users" aria-hidden="true"></i> Friends 999
+            </p>
+            <p class="SideBarText">
+                <i class="fa fa-bell" aria-hidden="true"></i> Notifications 10
+            </p>
+            <p class="SideBarText">
+                <i class="fa fa-upload" aria-hidden="true"></i> Post A Picture
+            <form action="PHP/upload.php" method="POST" enctype="multipart/form-data">
+                <input id="uploadPicture" name="uploadPicture" type="file" style="position: relative;
+                color:black;
+	opacity: 0.2;
+	z-index: 2;"/>
+                <input type="submit"/>
+            </form>
+            </p>
+            <div class="PostPreview">
+                <p class="SideBarText">
+                    <i class="fa fa-picture-o" aria-hidden="true"></i> Posts Preview
+                </p>
+                <div class="row">
+                    <img src="Images/Profile_Page/Image-0.jpeg" class="PreviewImages" alt="" />
+                    <img src="Images/Profile_Page/Image-5.jpeg" class="PreviewImages" alt="" />
+                    <img src="Images/Profile_Page/Image-2.jpeg" class="PreviewImages" alt="" />
+                </div>
+                <div class="row">
+                    <img src="Images/Profile_Page/Image-3.jpeg" class="PreviewImages" alt="" />
+                    <img src="Images/Profile_Page/Image-1.jpg" class="PreviewImages" alt="" />
+                    <img src="Images/Profile_Page/Image-4.jpeg" class="PreviewImages" alt="" />
+                </div>
+                <div class="row">
+                    <img src="Images/Profile_Page/Image-0.jpeg" class="PreviewImages" alt="" />
+                    <img src="Images/Profile_Page/Image-2.jpeg" class="PreviewImages" alt="" />
+                    <img src="Images/Profile_Page/Image-5.jpeg" class="PreviewImages" alt="" />
+
                 </div>
             </div>
         </div>

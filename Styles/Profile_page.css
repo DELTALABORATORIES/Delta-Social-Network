@@ -144,3 +144,14 @@ html, body {
     background-color:rgba(42, 34, 34, 0.91);
     border-style: none;
 }
+.PersonalInfoRight{
+    top:275px;
+    position:absolute;
+    background-color:white;
+    opacity:0.8;
+    width:19%;
+    right:2.5%;
+    min-height:420px;
+    text-align:left;
+    padding-left:2%;
+}

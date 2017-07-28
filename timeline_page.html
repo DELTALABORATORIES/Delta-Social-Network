@@ -12,17 +12,17 @@
     <div class="Main">
        <div class="ToolBar">
          <img src="Images/Logos/DELTA Network-normal.png" class="ToolBarLogo" alt="" />
-           <form action="PHP/MVC/controller/SearchController.php" method="post">
-               <input id="SearchInput" type="text" name="FriendSearch" placeholder="          Hovhannes Zohrabyan"/>
-               <input name="pageName" value="Search" style="visibility: collapse; width: 1px;height:1px;"/>
-               <input name="controller" value="Search" style="visibility: collapse;width: 1px;height:1px;"/>
-               <button type="submit"><i class="fa fa-search fa-2x SearchButton" aria-hidden="true" ></i></button>
+           <form action="PHP/MVC/controller/SearchController.php" method="POST">
+                   <input id="SearchInput" name="UserSearch" placeholder="            Hovhannes Zohrabyan">
+                   <input name="pageName" value="Search" style="visibility: hidden; width: 1px;height:1px;" id="In" title="FriendSearch" />
+                   <input name="controller" value="Search" style="visibility: hidden;width: 1px;height:1px;" id="Sm" title="FriendSearch">
+                   <button class="FriendSearch" ><i class="fa fa-search fa-2x SearchButton" aria-hidden="true" ></i></button>
            </form>
            <div class="Profile">
-               <p style="margin:0 -50px 0 0;" class="ProfileName">
+               <p style="margin:0 0 0 0;" class="ProfileName">
                    Hovhannes Zohrabyan
                </p>
-               <div style="float:left;width:60px;">
+               <div style="float:left;width:60px; ">
                    <a href="profile_page.html"><img src="Images/Profile_Page/ProfileImage.jpg" class="ToolBarProfileImage" alt="" /></a>
                </div>
            </div>

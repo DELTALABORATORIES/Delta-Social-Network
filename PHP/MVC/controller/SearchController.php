@@ -1,9 +1,15 @@
 <?php
 
+require '../config/db.config.php';
 
+$conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-?>
-<!DOCTYPE html>
+$sql = "SELECT `Name`,`ID` FROM `user_data` WHERE `Name` = '" . $_POST['UserSearch'] . "' ";
+$result = $conn->query($sql);
+echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,47 +32,56 @@
         background: url(../../../Images/Login_Page/background-image-2.jpeg) no-repeat center bottom;
         background-size: cover;
     }
-    .SearchResultContainer{
-        width:100%;
-        height: 80px;
-        background-color: rgba(42, 34, 34, 0.51);
-        margin-top: 20px;
+    .ResultContainer{
+        width: 100%;
+        height:80px;
+        background-color:rgba(0,0,0,0.4);
+        color:white;
+        margin-top:20px;
     }
-    .SearchProfilePicture{
-        position: relative;
-        top:10%;
-        left: 3.5%;
-        width: 10%;
-        max-height: 65px;
+    .UserPicture{
+        width:4%;
+        min-width:4%;
+        float:left;
+        margin-left:70px;
+        margin-top:6px;
     }
-    .SearchNameContainer{
-        position: relative;
-        top: -85%;
-        left:15.5%;
+    .SearchedUserName{
+        float:left;
+        margin-left:40px;
+        margin-top:30px;
+        color:white;
+        font-size:20px;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    .Name{
-        font-size: 22px;
-        font-family:'Pacifico', cursive ;
-        color: white;
+    .SendRequest{
+        border-style:none;
+        background-color: rgba(10,10,10,0.4);
+        width:160px;
+        height:40px;
+        margin-top:20px;
+        float: right;
+        margin-right: 40px;
+        color:white;
+        font-size:15px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 </style>
-<body>
-    <div class="Main">
-        <div class="SearchResultContainer">
-            <div>
-                <img class="SearchProfilePicture" src="../../../Images/@Username/username1500303608.jpg">
-            </div>
-            <div class="SearchNameContainer">
-                <p >
-                <?php echo $_POST['FriendSearch']; ?>
-                </p>
-            </div>
-            <div style="position: relative;top: -158%;left: 90%;">
-                <form>
-                    <button type="submit" style="height:30px;background-color: rgba(42, 34, 34, 0.51); border: none; color: white; ">Send Friend Request</button>
-                </form>
-            </div>
-        </div>
-    </div>
+<body>';
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo '<div class="ResultContainer">
+                    <img src="../../../Images/logo.jpg" class="UserPicture">
+                     <p class="SearchedUserName">' . $row['Name'] .
+            '</p>
+                 <form method="POST" action="SendFriendRequest.php">
+                     <button name="RequestReciever" class="SendRequest" type="submit" value = "' . $row['ID'] .'"> Send Friend Request</button>
+                 </form>
+              </div>';
+    }
+}
+echo '</div>
 </body>
-</html>
+</html>';
+$conn->close();
